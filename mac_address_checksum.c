@@ -2,7 +2,9 @@
 int main() {
     // change 0xFF, 0xFF, 0xFF to match your MAC address
     unsigned char chksum = 0; int i = 0; unsigned char rgAddr[6] = {0x00, 0x11, 0x32, 0xFF, 0xFF, 0xFF};
-    for (i = 0; i < 6; i++) { 	chksum += rgAddr;}
+    for (i = 0; i < 6; i++) { 	
+        chksum += rgAddr;
+    }
     printf("Checksum: 0x%X\n", chksum);
     return 0;
 }
