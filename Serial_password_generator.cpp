@@ -1,3 +1,7 @@
+//generates the password for serial uart consol from synology ds213 for user root
+
+//password is relative to actual date. keep in mind that its just work with correct date in rtc clock 
+
 #include <stdlib.h> 
 #include <time.h> 
 #include <stdio.h>
